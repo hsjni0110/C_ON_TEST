@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: c_on_user
+    password: c_on_pw
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+
+security:
+  jwt:
+    token:
+      secret-key : g+eEdOe0sEmLsBjdZYam6UbH7FGP9kEKv4P1Jc+RBEE=
+      access:
+        expire-length : 1800000
+      refresh:
+        expire-length : 3600000
