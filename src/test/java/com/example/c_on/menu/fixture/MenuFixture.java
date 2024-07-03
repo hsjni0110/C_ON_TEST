@@ -10,9 +10,9 @@ public class MenuFixture {
         return Category.initCategory("양식");
     }
 
-    public static Food 돈까스(Category 양식) {
+    public static Contain 돈까스(Category 양식) {
         Food food = new Food("돈까스", 10000);
-        food.saveFoodWithCategory(양식);
-        return food;
+        return food.saveFoodWithCategory(양식);
+
     }
 }
