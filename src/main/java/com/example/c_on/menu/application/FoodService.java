@@ -37,7 +37,6 @@ public class FoodService {
      * @param categoryName
      * @return
      */
-
     @Transactional
     public FoodRegisterResponse save(String foodName, Integer price, String categoryName) {
         Food food = new Food(foodName, price);
