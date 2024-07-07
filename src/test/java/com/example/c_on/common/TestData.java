@@ -2,6 +2,7 @@ package com.example.c_on.common;
 
 import com.example.c_on.customer.domain.Customer;
 import com.example.c_on.menu.domain.Category;
+import com.example.c_on.menu.domain.Contain;
 import com.example.c_on.menu.domain.Food;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,6 +19,9 @@ public class TestData {
 
     @Default
     private final List<Food> foods = new ArrayList<>();
+
+    @Default
+    private final List<Contain> contains = new ArrayList<>();
 
     public void addCustomers(Customer... customers) {
         addCustomers(Arrays.asList(customers));
@@ -41,6 +45,14 @@ public class TestData {
 
     private void addFoods(List<Food> foods) {
         this.foods.addAll(foods);
+    }
+
+    public void addContains(Contain... contains) {
+        addContains(Arrays.asList(contains));
+    }
+
+    private void addContains(List<Contain> contains) {
+        this.contains.addAll(contains);
     }
 
     public List<Customer> customers() {

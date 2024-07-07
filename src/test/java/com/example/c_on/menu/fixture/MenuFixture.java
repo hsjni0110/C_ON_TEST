@@ -13,6 +13,5 @@ public class MenuFixture {
     public static Contain 돈까스(Category 양식) {
         Food food = new Food("돈까스", 10000);
         return food.saveFoodWithCategory(양식);
-
     }
 }

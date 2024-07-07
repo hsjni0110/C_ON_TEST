@@ -69,7 +69,7 @@ public class OrderController {
             @Auth String customerName
     ) {
         orderService.order(customerName);
-        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
     @PostMapping("/previous")

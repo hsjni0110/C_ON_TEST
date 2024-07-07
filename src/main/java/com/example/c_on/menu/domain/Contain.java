@@ -22,11 +22,11 @@ public class Contain {
     ContainId containId;
 
     @MapsId("foodName")
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     private Food food;
 
     @MapsId("categoryName")
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     private Category category;
 
     public Contain() {
